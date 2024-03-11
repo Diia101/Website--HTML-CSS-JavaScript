@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Untold Odyssey Artists</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="header">
+    <div class="container">
+      <div class='header-content'>
+        <div class="header-logo">
+          <a href="../index.html">
+            <img src="../assets/images/logoSite.png" alt="logo" />
+          </a>
+        </div>
+        <div class="menu">Odyssey Music Festival</div>
+        <div class="menu" onclick="openHeader()">
+          <div>Meniu</div>
+          <img src='../assets/icons/angle-down.svg' alt="menuArrow" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="expanded-header" id='expandHeader'>
+    <div class='header-toggled' id='expandHeaderContent'>
+      <div class='menu-items-container'>
+        <a href="../pages/schedule.html">
+          <div class="header-navItem">
+            <div>Orar</div>
+            <img src="../assets/icons/angle-right.svg" alt="rightImage" />
+          </div>
+        </a>
+        <a href="../pages/artists.html">
+          <div class="header-navItem">
+            <div>Artisti</div>
+            <img src="../assets/icons/angle-right.svg" alt="rightImage" />
+          </div>
+        </a>
+        <a href="../pages/gallery.html">
+          <div class="header-navItem">
+            <div>Galerie</div>
+            <img src="../assets/icons/angle-right.svg" alt="rightImage" />
+          </div>
+        </a>
+        <a href="../pages/about.html">
+          <div class="header-navItem">
+            <div>Despre</div>
+            <img src="../assets/icons/angle-right.svg" alt="rightImage" />
+          </div>
+        </a>
+        <a href="../pages/contact.html">
+          <div class="header-navItem">
+            <div>Contact</div>
+            <img src="../assets/icons/angle-right.svg" alt="rightImage" />
+          </div>
+        </a>
+      </div>
+      <div class='cruise-image'>
+        <img alt="cruise" src="../assets/images/cruise.jpeg" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Main content -->
+  <div class="main">
+    <section class="main-section-full">
+      <img class='stars-image' alt='stars' src="../assets/images/stars.jpeg" />
+      <div class="container">
+        <h1 class='heading'>Artisti</h1>
+        <div class='artists-container'>
+          <div class='artist' onclick="displayContent('arianaDetails')">
+            <img alt="arianagrande" src="../assets/images/arianaGrande.jpeg" />
+            <div class="artist-name">Ariana Grande</div>
+          </div>
+          <div class='artist' onclick="displayContent('coldplayDetails')">
+            <img alt="coldplay" src="../assets/images/coldplay.jpeg" />
+            <div class="artist-name">Coldplay</div>
+          </div>
+          <div class='artist' onclick="displayContent('donDiabloDetails')">
+            <img alt="donDiablo" src="../assets/images/donDiablo.jpeg" />
+            <div class="artist-name">Don Diablo</div>
+          </div>
+          <div class='artist' onclick="displayContent('martinGarrixDetails')">
+            <img alt=" donDiablo" src="../assets/images/martinGarrix.jpeg" />
+            <div class="artist-name">Martin Garrix</div>
+          </div>
+        </div>
+        <!-- ariana details -->
+        <div class='artist-details' id="arianaDetails">
+          <div class="artist-title">
+            Ariana Grande
+          </div>
+          <br />
+          <div class='artist-description'>Ariana Grande-Butera (n. 26 iunie 1993, Boca Raton, Florida, SUA),cunoscută
+            profesional ca Ariana Grande,
+            este o actriță, cântăreață și cantautoare (Un cantautor este un cântăreț care își compune singur muzica și
+            își scrie singur versurile cântecelor interpretate. De cele mai multe ori, acesta își orchestrează tot
+            singur propriile cântece, folosind de regulă o chitară sau un pian.) americană.
+          </div>
+          <br />
+          <div class='artist-description'>Discografie: Yours Truly (2013), My Everything (2014),
+            Christmas & Chill (2015), Dangerous Woman (2016), Sweetener (2018), Thank U, Next (2019), Positions (2021)
+          </div>
+          <br />
+          <div class='artist-description'>Cele mai cunoscute piese:
+            <a href="https://www.youtube.com/watch?v=gl1aHhXnN1k&ab_channel=ArianaGrandeVevo" target="_blank">
+              <div class='artist-songs'>Thank u, next (2018)</div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=QYh6mYIJG2Y&ab_channel=ArianaGrandeVevo" target="_blank">
+              <div class='artist-songs'>7 rings (2019)</div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=iS1g8G_njx8&ab_channel=ArianaGrandeVevo" target="_blank">
+              <div class='artist-songs'>Problem (2014)</div>
+            </a>
+          </div>
+        </div>
+
+        <!-- coldplay details -->
+        <div class='artist-details' id="coldplayDetails">
+          <div class="artist-title">
+            Coldplay
+          </div>
+          <br />
+          <div class='artist-description'>Coldplay este o formație de rock alternativ și piano-rock din Londra, Regatul
+            Unit, printre cele mai cunoscute formații din lume. Formația este compusă din Chris Martin, Jon Buckland,
+            Guy Berryman și Will Champion.
+            Coldplay este una dintre cele mai de succes trupe ale noului mileniu, vânzând peste 50 de milioane de
+            albume. Trupa este, de asemenea, cunoscută pentru single-urile de succes "Speed of Sound", "Clocks" și "Viva
+            la Vida". A fost premiată cu multe Premii Grammy. Coldplay și-a câștigat faima mondială cu lansarea
+            single-ului "Yellow", urmat de succesul albumului de debut, Parachutes (2000), care a fost nominalizat la
+            Mercury Prize. Atât Parachutes cât și următorul album, A Rush of Blood to the Head (2002), au avut un imens
+            succes; cel din urmă a fost numit de către NME Albumul Anului. X&Y (2005) a primit și el laude; din
+            decembrie 2006, formația a lucrat cu producătorul Brian Eno la cel de-al patrulea album, Viva la Vida or
+            Death and All His Friends care a apărut în anul 2008. Albumul a fost premiat cu două Premii Grammy, pentru
+            Cel mai bun album rock al anului și pentru Cel mai bun Duo sau Formație. Tot din albumul Viva la Vida or
+            Death and All His Friends face parte și single-ul "Viva la Vida" care a primit Premiul Grammy în calitate de
+            Cântecul anului 2008.
+          </div>
+          <br />
+          <br />
+          <div class='artist-description'>Cele mai cunoscute piese:
+            <a href="https://www.youtube.com/watch?v=QtXby3twMmI&ab_channel=Coldplay" target="_blank">
+              <div class='artist-songs'>Adventure of a lifetime</div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=1G4isv_Fylg&ab_channel=Coldplay" target="_blank">
+              <div class='artist-songs'>Paradise</div>
+            </a>
+          </div>
+        </div>
+
+        <!-- don diablo details -->
+        <div class='artist-details' id="donDiabloDetails">
+          <div class="artist-title">
+            Don Diablo
+          </div>
+          <br />
+          <div class='artist-description'>Don Pepijn Schipper ( născut la 27 februarie 1980), mai cunoscut cu numele său
+            de scenă Don Diablo , este un DJ olandez , producător de discuri, muzician și compozitor de muzică
+            electronică de dans din Coevorden . Este cunoscut pentru stilul său electronic de producție și vocalizare în
+            majoritatea pieselor sale. Este unul dintre pionierii viitorului gen house și a fost clasat pe locul șase în
+            Top 100 DJ - lista 2020 de DJ Mag . De asemenea, a fost clasat pe primul loc Producător al anului pentru
+            2018 de 1001Tracklists. În 2016, a fost clasat pe primul loc al artistului Future House of the Year de pe
+            Beatport .
+          </div>
+          <br />
+          <div class='artist-description'>Discografie : Life Is a Festival (2008), Future (2018), Forever (TBA)
+          </div>
+          <br />
+          <div class='artist-description'>Cele mai cunoscute piese:
+            <a href="https://www.youtube.com/watch?v=r6E3J4GPpjc" target="_blank">
+              <div class='artist-songs'>On my mind</div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=Oy9V_4im0wg" target="_blank">
+              <div class='artist-songs'>Cutting Shapes</div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=k4LphhTa_xg" target="_blank">
+              <div class='artist-songs'>Save a Little Love</div>
+            </a>
+          </div>
+        </div>
+
+        <!-- martin garrix details -->
+        <div class='artist-details' id="martinGarrixDetails">
+          <div class="artist-title">
+            Martin Garrix
+          </div>
+          <br />
+          <div class='artist-description'>Martijn Gerard Garritsen, cunoscut sub numele de scenă Martin Garrix (n. 14
+            mai 1996, Amsterdam, Olanda) este un muzician și producător olandez, cunoscut pentru colaborarea cu casa de
+            discuri Spinnin' Records. El este cunoscut pentru melodiile Animals și Wizard, care au avut parte de succes
+            în Irlanda, Belgia și Marea Britanie. În anul 2014, Martin Garrix a ajuns pe locul 4 într-un clasament făcut
+            anual de revista "DJ MAG". Melodia "Animals" a a devenit cea mai celebră piesă de pe canalul casei de
+            discuri Spinnin' Records, în momentul de față melodia având peste 1 miliard de vizualizări pe YouTube.
+            Aceeași piesă a fost nominalizata la World Music Awards pentru World’s Best Song si World’s Best Video. În
+            anul 2016 Garrix a ajuns pe primul loc în clasamentul întocmit de către revista "DJ Mag".
+            După aproape două luni și cu două zile înainte să se anunțe rezultatul pe anul 2017 la revista "Top 100 DJ
+            MAG" a lansat melodia Forever, în colaborare pentru a 4-a oară cu Matisse & Sadko. Peste două zile a
+            câștigat pentru a doua oară la rând "Top 100 DJ MAG" făcându-l cel mai tânăr DJ din clasament care l-a
+            câștigat de două ori. Pe data de 1 decembrie 2017 acesta a lansat prima sa colaborare cu David Guetta care
+            se numește "So Far Away", această melodie a avut un succes foarte mare fiind în cele mai mari topuri din
+            lume.
+          </div>
+          <br />
+          <div class='artist-description'>Cele mai cunoscute piese:
+            <a href="https://www.youtube.com/watch?v=gCYcHz2k5x0" target="_blank">
+              <div class='artist-songs'>Animals</div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=KnL2RJZTdA4" target="_blank">
+              <div class='artist-songs'>Wizard</div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=Zv1QV6lrc_Y" target="_blank">
+              <div class='artist-songs'>Forbidden Voices</div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+  </div>
+  </section>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row-content">
+        <div class="footer-item text-underline">
+          Copyright by DM & CC © 2021
+        </div>
+        <div class='footer-item social-icons'>
+          <a href="https://www.facebook.com/catalina.cojocaru145" target="_blank">
+            <img alt="facebook" src="../assets/icons/facebook.svg" />
+          </a>
+          <a href="https://www.youtube.com/watch?v=kYl8pBn6FtY" target="_blank">
+            <img alt="youtube" src="../assets/icons/youtube.svg" />
+          </a>
+          <a href="https://www.instagram.com/dianagratiana/" target="_blank">
+            <img alt="instagram" src="../assets/icons/instagram.svg" />
+          </a>
+        </div>
+      </div>
+      <div class="footer-item">
+        Phone number 1: <span class="text-italic text-underline">+40 (742) 152 268</span>
+      </div>
+      <div class="footer-item">
+        Phone number 2: <span class="text-italic text-underline">+40 (741) 490 128</span>
+      </div>
+      <div class="footer-item">
+        Terms of Use • Privacy Policy • Cookie Policy
+      </div>
+      <div class="header-site">
+        <img alt="headerSite" src='../assets/images/logoSite.png' />
+      </div>
+    </div>
+  </footer>
+  <script src="../index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

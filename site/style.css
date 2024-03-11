@@ -1,0 +1,453 @@
+html {
+  font-family: monaco, Consolas, Lucida Console, monospace;
+  font-family: "Apple Chancery", cursive;
+}
+
+body {
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 60px;
+
+  background-color: #051c4d;
+
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.title {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+
+  font-size: 80px;
+  line-height: 84px;
+  font-weight: bold;
+
+  color: #fed136;
+
+  text-align: center;
+
+  z-index: 1;
+}
+
+.expanded-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 0px;
+
+  transition: height 0.5s ease-out;
+
+  background-color: #051c4d;
+
+  position: relative;
+
+  z-index: 2;
+  position: sticky;
+  top: 60px;
+}
+
+.expanded-header.active {
+  height: 280px;
+  transition: height 0.5s ease-in;
+}
+
+.container {
+  width: 100%;
+  max-width: 1600px;
+  padding: 0 80px;
+}
+
+.main-section {
+  height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+
+  background: none;
+}
+
+.main-section img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.main-section-full {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+
+  background: none;
+
+  padding-bottom: 30px;
+}
+
+.main-section-full img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.main-section video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.header-logo img {
+  height: 60px;
+  width: auto;
+  object-fit: cover;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: #fed136;
+}
+
+.menu {
+  cursor: pointer;
+  display: flex;
+  gap: 15px;
+
+  font-size: 30px;
+}
+
+.header-toggled {
+  pointer-events: none;
+  max-width: 1600px;
+  width: 100%;
+  height: 280px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+
+  opacity: 0;
+  transition: opacity 0.25s ease-out;
+
+  display: flex;
+}
+
+.header-toggled.active {
+  pointer-events: all;
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+.header-navItem {
+  cursor: pointer;
+
+  font-size: 24px;
+  line-height: 30px;
+
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+
+  color: #fed136;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  height: 200px;
+
+  background-color: #051c4d;
+  color: #fed136;
+
+  position: relative;
+}
+
+.row-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-item {
+  padding-top: 20px;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.social-icons {
+  display: flex;
+  gap: 30px;
+
+  align-items: center;
+
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.cruise-image {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.cruise-image img {
+  height: 250px;
+  width: 600px;
+  object-fit: cover;
+
+  border-radius: 12px;
+}
+
+.menu-items-container {
+  width: 50%;
+}
+
+.main-section-less img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.main-section-less {
+  display: flex;
+  justify-content: center;
+  min-height: calc(100vh - 260px);
+
+  position: relative;
+
+  background: none;
+}
+
+.artists-container {
+  margin-top: 30px;
+  display: flex;
+  gap: 30px;
+}
+
+.artist {
+  cursor: pointer;
+  flex: 0 0 23.5%;
+
+  border-radius: 15px;
+  box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.15);
+
+  position: relative;
+}
+
+.artist:hover {
+  cursor: pointer;
+  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.6);
+  transition: box-shadow 0.5s;
+}
+
+.artist img {
+  border-radius: 15px;
+}
+
+.artist-name {
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+
+  font-size: 36px;
+
+  color: #fed136;
+
+  width: 100%;
+  text-align: center;
+}
+
+.heading {
+  color: #fed136;
+  font-size: 36px;
+}
+
+.stars-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.artist-details {
+  border-radius: 15px;
+  margin-top: 90px;
+  color: #fed136;
+  padding: 30px;
+  background-color: #051c4d;
+
+  display: none;
+}
+
+.artist-title {
+  font-size: 36px;
+}
+
+.artist-description {
+  font-size: 24px;
+}
+
+.artist-songs {
+  cursor: pointer;
+  padding-left: 60px;
+  text-decoration: underline;
+}
+
+.about-content {
+  padding: 30px;
+  color: #fed136;
+  font-size: 36px;
+}
+
+.about-container {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-title {
+  font-size: 48px;
+  padding: 30px;
+  color: #fed136;
+}
+
+.gallery {
+  margin-top: 60px;
+}
+
+.gallery-container {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.gallery-item {
+  cursor: pointer;
+  height: 300px;
+  flex: 0 0 30%;
+  border-radius: 15px;
+}
+
+.gallery-item img {
+  border-radius: 15px;
+}
+
+.contact-container {
+  margin-top: 30px;
+  font-size: 42px;
+  padding: 30px;
+  color: #fed136;
+}
+
+.header-site {
+  position: absolute;
+  right: 7%;
+  top: 27%;
+}
+
+.header-site img {
+  height: 140px;
+  width: auto;
+}
+
+.team-image {
+  margin-top: 60px;
+}
+
+.team-image img {
+  border-radius: 15px;
+  height: 600px;
+}
+
+@media (max-width: 1600px) {
+  .menu-items-container {
+    padding-left: 80px;
+    padding-right: 20px;
+  }
+
+  .cruise-image {
+    padding-right: 80px;
+  }
+
+  .about-title {
+    padding: 24px;
+    font-size: 42px;
+  }
+
+  .about-content {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .team-image img {
+    height: 450px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .menu-items-container {
+    flex-shrink: 0;
+    width: 43%;
+  }
+
+  .cruise-image {
+    flex-shrink: 0;
+    width: 40%;
+  }
+
+  .about-title {
+    padding: 20px;
+    font-size: 42px;
+  }
+
+  .about-content {
+    padding: 20px;
+    font-size: 18px;
+  }
+
+  .artist-title {
+    font-size: 30px;
+  }
+
+  .artist-name {
+    font-size: 30px;
+  }
+
+  .contact-container {
+    font-size: 24px;
+  }
+
+  .team-image img {
+    height: 400px;
+  }
+}
